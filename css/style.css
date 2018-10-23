@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+.container {
+    width: 40%;
+    margin: 100px auto 0 auto;
+    background: #66c2ff;
+    padding: 30px;
+}
+
+.inputForm {
+    display: flex;
+    width: 100%;
+    
+}
+
+input[type=text] {
+    padding: 10px;
+    background: #f1f1f1;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border: 3px solid #ccc;
+}
+
+input[type=text]:focus{
+    border: 3px solid #555;
+}
+
+#btnSubmit {
+    padding: 10px;
+    border: none;
+    background: #007acc;
+}
+
+header {
+    text-align: center;
+}
+
+#emptyList {
+    margin: 20px 0 0 0;
+}
+
+.done {
+    background: #e6ffe6 !important;
+}
+
+.delete {
+    display: none !important;
+}
+
+.row {
+    position: relative;
+    background: #ffe6e6;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    display: flex;
+}
+.parag {
+    padding: 0 0 0 10px;
+    flex-grow: 1;
+}
+
+.parag::first-letter{
+    text-transform: capitalize;
+}
+    
+.btnRemove {
+    border: none;
+    background: rgba(0, 0, 0, 0)
+}
+
+@media all and (max-width: 700px){
+    .container {
+        width: 80%;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>What to do?</h1>
+                <p>Click the row to toggle row color. (red or green)</p>
+                <p>Mark the row as green if already done.</p>
+                <p>Otherwise mark as red.</p>
+                <h5>Note: KEEP SENTENCES SHORT (Max character: 50)</h5>
+            </header>
+            <main>
+                <form class="inputForm">
+                    <input type="text" id="txtBox" placeholder="Type here..." maxlength='50'>
+                    <button id="btnSubmit"><i class="fas fa-pencil-alt fa-2x"></i></button>
+                </form>
+                <section id="emptyList">
+
+                </section>
+            </main>
+        </div>
+        
+    <script src="js/main.js"></script>
+    </body>
+</html>
