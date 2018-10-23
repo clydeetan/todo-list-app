@@ -2,7 +2,7 @@ var btnSubmit = document.getElementById('btnSubmit');
 var table = document.getElementById('emptyList');
 var userInput = document.getElementById('txtBox');
 var row = document.createElement('div');
-
+var charCount = document.getElementById('counter');
 
 function inputLength(){
 	return userInput.value.length;
@@ -47,7 +47,6 @@ function createList(e){
 
 btnSubmit.addEventListener('click', createList);
 
-function charCounter(field, field2, max){
-    var countfield = document.getElementById();
-    
-}
+userInput.addEventListener('keyup', function(){
+    charCount.innerText = 50 - inputLength();
+});
